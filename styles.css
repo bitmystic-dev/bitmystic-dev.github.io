@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1c2541;
+    color: white;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background-color: #38618C;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav img {
+    padding-bottom: 40px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 24px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(228, 100, 100);
+}
+
+main {
+    padding: 16px;
+    margin-top: 30px;
+}
+
+hr {
+    border: 0;
+    background: #582729;
+    height: 1.5px;
+    margin: 60px 86px;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+}
+
+.first-section>div {
+    width: 30%;
+}
+
+.left-section {
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.right-section img {
+    margin: "50px";
+}
+
+.blue {
+    color: rgb(1, 247, 255);
+}
+
+.grey-text {
+    color: #808080;
+}
+
+#element {
+    color: rgb(233, 127, 51);
+}
+
+.second-section {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.second-section h1 {
+    font-size: 1.6rem;
+    color: #5bc0be;
+}
+
+.left-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.left img {
+    margin-top: 50px;
+}
+
+.right p {
+    font-size: large;
+}
+
+h2{
+    color: chocolate;
+    margin-bottom: 15px;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.details{
+    margin-top: 15px;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.details .email{
+    text-decoration: none;
+    color: rgb(175, 61, 233);
+}
