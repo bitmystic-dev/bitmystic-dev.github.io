@@ -66,11 +66,6 @@ nav ul li a:hover {
     color: rgb(228, 100, 100);
 }
 
-main {
-    padding: 16px;
-    margin-top: 30px;
-}
-
 hr {
     border: 0;
     background: #016FB9;
@@ -80,24 +75,24 @@ hr {
 
 .first-section {
     display: flex;
-    justify-content: space-around;
-    margin: 230px 0;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
 
 .first-section>div {
     width: 30%;
 }
 
-.left-section {
-    font-size: x-large;
-    margin: 10px 0;
+.first-section > .left-section {
+    width: 100%;
+    padding: 0 80px;
 }
 
-.right-section img {
-    padding-bottom: 80px;
-    width: 300px;
-    height: 316px;
+.left-section {
+    font-size: x-large;
+    margin: 120px 0;
 }
 
 .blue {
@@ -207,33 +202,41 @@ a{
     text-decoration: none;
 }
 
-.footer {
-    display: flex;
-    background-color: #1E1E24;
-    font-size: x-small;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    justify-content: space-around;
+main {
+    flex: 1;
+    padding: 16px;
+    margin-top: 90px;
+    box-sizing: border-box;
 }
 
-.footer ul {
+/*.footer-home {
+    background-color: #1E1E24;
+    font-size: x-small;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.footer-home ul {
     display: flex;
     justify-content: left;
 }
 
-.footer .footer-left ul li {
+.footer-home .footer-left ul li {
     list-style: none;
     margin: 0 10px;
     padding-top: 10px;
 }
 
-.footer .footer-left ul li a {
+.footer-home .footer-left ul li a {
     text-decoration: none;
     color: white;
 }
 
 .footer ul li a:hover {
     color: rgb(228, 100, 100);
-}
+}*/
