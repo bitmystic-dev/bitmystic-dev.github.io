@@ -7,7 +7,7 @@
     <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
-    <title>Bitmystic | Portfolio 90</title>
+    <title>Bitmystic | Portfolio</title>
 </head>
 <body>
     <header>
@@ -15,28 +15,25 @@
             <div class="left"><img src="img/bitmystic-logo.png" alt="BitMystic Logo"></div>
             <div class="right">
                 <ul>
-                    <li><span class="nes-text is-primary"><a href="/">Home</a></li></span>
-                    <li><span class="nes-text is-primary"><a href="/">About</a></li></span>
-                    <li><span class="nes-text is-primary"><a href="/">Projects</a></li></span>
-                    <li><span class="nes-text is-primary"><a href="/">Archive</a></li></span>
-                    <li><span class="nes-text is-primary"><a href="/">Contact Me</a></li></span>
+                    <li><span class="nes-text is-primary"><a href="#home" onclick="showSection('home')">Home</a></li></span>
+                    <li><span class="nes-text is-primary"><a href="#about" onclick="showSection('about')">About</a></li></span>
+                    <li><span class="nes-text is-primary"><a href="#projects" onclick="showSection('projects')">Projects</a></li></span>
+                    <li><span class="nes-text is-primary"><a href="#">Archive</a></li></span>
+                    <li><span class="nes-text is-primary"><a href="#">Contact Me</a></li></span>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="first-section">
+        <section class="first-section" id="home">
             <div class="left-section">
                 Hello, My name is <span class="blue">BitMystic</span> (Sai Pranav)
                 <div>and I am a</div>
                 <span id="element"></span>
             </div>
-            <div class="right-section">
-                <img src="img/background.png" alt="Text with BitMystic Dev written">
-            </div>
         </section>
-<hr>
+
         <section class="second-section" id="about">
             <span class="white-text">Everything You Need to Know</span>
             <h1>About Me</h1>
@@ -54,8 +51,8 @@
                 </div>
             </div>
         </section>
-<hr>
-        <section class="third-section">
+
+        <section class="third-section" id="projects">
             <span class="white-text">Flexing my</span>
             <h1>Projects</h1>
             <!--All Projects List-->
@@ -65,14 +62,14 @@
                     <img src="img/img1.png" width="240px" height="140px">
                     <a class="link" href="https://bitmystic-dev.github.io/">bitmystic-dev.github.io</a>
                     <p>My Personal Portfolio Website!</p>
-                    <a class="nes-btn" href="#"><i class="nes-icon github is-small"></i> Github</a>
+                    <a class="nes-btn" href="https://github.com/bitmystic-dev/bitmystic-dev.github.io"><i class="nes-icon github is-small"></i> Github</a>
                   </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="footer">
+<!--    <div class="footer">
         <div class="footer-left">
             <ul>
                 <li><span class="nes-text is-primary"><a href="/">Blog</a></li></span>
@@ -92,6 +89,21 @@
     var typed = new Typed('#element', {
       strings: ['School-Level Basketball Player', 'Software Developer', 'Tech Enthusiast'],
       typeSpeed: 28,
+    });
+
+    function showSection(id) {
+        // Hide all sections
+        document.querySelectorAll('main section').forEach(section => {
+            section.style.display = 'none';
+        });
+
+        // Show the selected section
+        document.getElementById(id).style.display = 'block';
+    }
+
+    // Show the first section by default on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        showSection('home'); // Adjust 'home' to the id of the first section you want to display
     });
   </script>
 </body>
